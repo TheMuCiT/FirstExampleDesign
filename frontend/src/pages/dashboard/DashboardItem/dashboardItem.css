@@ -1,0 +1,78 @@
+.dashboardItemBox {
+     background-color: red;
+     margin-bottom: 18px;
+     border-radius: 10px;
+}
+
+.dashboardItemBoxHeader {
+     display: flex;
+     justify-content: space-between;
+     padding-top: 15px;
+}
+
+.dashboardItemBoxButtom {
+     display: flex;
+     justify-content: space-between;
+     border-top: 1px solid rgba(0, 0, 0, 0.5);
+     margin: 30px 15px 0px 15px;
+     padding-bottom: 25px;
+}
+
+.dashboardItemBoxButtomStatus {
+     display: flex;
+     align-items: center;
+     margin-top: 15px;
+}
+
+.dashboardItemBoxButtomIcon {
+     margin-top: 15px;
+     height: 10px;
+}
+
+.test123 {
+     display: flex;
+}
+
+.dashboardItemHeaderStatusBox {
+     height: 32px;
+     width: 110px;
+     background-color: rgb(0, 255, 85);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 8px;
+     font-size: 13px;
+     font-weight: 500;
+     margin-left: 15px;
+}
+
+.dashboardItemHeaderData {
+     opacity: 0.5;
+     font-size: 13px;
+     font-weight: 500;
+     margin-right: 15px;
+}
+
+.dashboardItemBoxMain {
+     font-size: 13px;
+     font-weight: 500;
+     margin: 30px 0px 20px 15px;
+}
+
+.dashboardItemBoxButtomStatusNumber {
+     font-size: 9px;
+     font-weight: normal;
+     margin-left: 8px;
+}
+
+.dashboardItemBoxButtomStatusIcon {
+     margin-left: 16px;
+}
+
+.dashboardItemBoxMainIMG {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: auto;
+     margin-bottom: -33px;
+}

@@ -1,23 +1,25 @@
 .dashboardMain {
-     display: grid;
-     grid-template-columns: auto auto auto auto;
-     grid-column-gap: 38px;
+     display: flex;
+     column-gap: 38px;
 }
 
 .dashboardMainProposed {
-     background-color: cadetblue;
+     flex: 25%;
 }
 
 .dashboardMainInProgress {
      background-color: darkgreen;
+     flex: 25%;
 }
 
 .dashboardMainReview {
      background-color: darkturquoise;
+     flex: 25%;
 }
 
 .dashboardMainComplete {
      background-color: gold;
+     flex: 25%;
 }
 
 .dashboardMainProposedHeader {
@@ -27,13 +29,30 @@
 
 /* TEXT */
 
-.dashboardMainProposedHeaderText {
+.dashboardMainProposedHeaderLeft {
      font-size: 19px;
      font-weight: 600;
+     display: flex;
+     align-items: center;
+}
+
+.dashboardMainProposedHeaderLeftIcon {
+     margin-right: 10px;
+     display: flex;
 }
 
 .dashboardMainProposedHeaderSelect {
      font-size: 19px;
      font-weight: 500;
      color: rgba(0, 0, 0, 0.5);
+     display: flex;
+     align-items: center;
+}
+
+.dashboardMainProposedHeaderRightIcon {
+     margin: 0px 10px 0px 15px;
+}
+
+.dashboardMainProposedList {
+     margin-top: 47px;
 }
