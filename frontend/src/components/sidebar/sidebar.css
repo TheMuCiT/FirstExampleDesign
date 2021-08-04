@@ -1,0 +1,36 @@
+.SideBar {
+     background-color: var(--color-white);
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 125px;
+     position: fixed;
+     overflow-x: hidden;
+     padding-top: 47px;
+     border-right: 1px solid #e7e7e7;
+}
+
+.sideBarLogo {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 69px;
+}
+
+.SideBar a {
+     display: block;
+     background-color: red;
+     margin-bottom: 36px;
+}
+
+.sidebarLinks {
+     height: 53px;
+     width: 125px;
+     display: table-cell;
+     vertical-align: middle;
+     text-align: center;
+}
+
+.active {
+     border-left: 3px solid black;
+}

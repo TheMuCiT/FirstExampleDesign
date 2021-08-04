@@ -1,0 +1,39 @@
+.dashboard {
+     background-color: green;
+     margin: 68px 70px 20px 75px;
+}
+
+.dashboardTitleRow {
+     background-color: yellow;
+     display: flex;
+     margin-bottom: 33px;
+}
+
+/* Page Section */
+
+.dashboardPageRow {
+     display: flex;
+}
+
+.dashboardPageLinks {
+     display: flex;
+}
+
+.dashboardPageItem {
+     background-color: red;
+     margin-right: 53px;
+     border-bottom: 3px solid black;
+}
+
+.dashboardPageText {
+     margin: 0px 10px;
+     font-weight: 400;
+     font-size: 17px;
+}
+
+/* Dashboard Main */
+
+.dashboardMainRow {
+     background-color: coral;
+     margin-top: 50px;
+}

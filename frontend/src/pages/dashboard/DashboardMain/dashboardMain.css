@@ -1,0 +1,39 @@
+.dashboardMain {
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     grid-column-gap: 38px;
+}
+
+.dashboardMainProposed {
+     background-color: cadetblue;
+}
+
+.dashboardMainInProgress {
+     background-color: darkgreen;
+}
+
+.dashboardMainReview {
+     background-color: darkturquoise;
+}
+
+.dashboardMainComplete {
+     background-color: gold;
+}
+
+.dashboardMainProposedHeader {
+     display: flex;
+     justify-content: space-between;
+}
+
+/* TEXT */
+
+.dashboardMainProposedHeaderText {
+     font-size: 19px;
+     font-weight: 600;
+}
+
+.dashboardMainProposedHeaderSelect {
+     font-size: 19px;
+     font-weight: 500;
+     color: rgba(0, 0, 0, 0.5);
+}

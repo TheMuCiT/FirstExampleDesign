@@ -1,0 +1,62 @@
+.dashboardTitleLeft {
+     flex: 50%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+}
+
+.dashboardTitleRight {
+     flex: 50%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+}
+
+.dashboardTitleRightButton {
+     height: 55px;
+     width: 152px;
+     display: flex;
+     align-items: center;
+     background-color: var(--color-Blackblue);
+     justify-content: center;
+     border-radius: 8px;
+}
+
+.dashboardTitleRightSearch {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     margin-right: 36px;
+     width: 293px;
+     height: 53px;
+     padding: 0px 10px;
+     margin-left: 35px;
+}
+
+.dashboardTitleRightSearchInput {
+     margin-left: 10px;
+     border: none;
+     height: 100%;
+     outline: none;
+     width: 90%;
+     color: rgba(0, 0, 0, 0.5);
+}
+
+.dashboardTitleRightIcon {
+     display: flex;
+     margin-left: 30px;
+}
+
+/* TEXT */
+
+.dashboardTitleLeftText {
+     font-size: 48px;
+     font-weight: 600;
+}
+
+.dashboardTitleRightButtonText {
+     font-size: 13px;
+     font-weight: 500;
+}
