@@ -4,6 +4,7 @@
      left: 0;
      height: 100%;
      width: 125px;
+     z-index: 800;
      position: fixed;
      overflow-x: hidden;
      padding-top: 47px;

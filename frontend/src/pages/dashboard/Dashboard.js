@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { NavLink } from 'react-router-dom'
+
 import DashboardTitle from './DashboardTitle/DashboardTitle'
 import DashboardMain from './DashboardMain/DashboardMain'
 
@@ -14,16 +16,41 @@ const Dashboard = () => {
                <div className='dashboardPageRow'>
                     <div className='dashboardPageLinks'>
                          <div className='dashboardPageItem'>
-                              <div className='dashboardPageText'>Tasks</div>
+                              <NavLink
+                                   exact
+                                   to='/dashboard'
+                                   className='dashboardPageText'
+                                   activeClassName='activeTop'
+                              >
+                                   Tasks
+                              </NavLink>
                          </div>
                          <div className='dashboardPageItem'>
-                              <div className='dashboardPageText'>Objectives</div>
+                              <NavLink
+                                   to='/dashboard/objectives'
+                                   className='dashboardPageText'
+                                   activeClassName='activeTop'
+                              >
+                                   Objectives
+                              </NavLink>
                          </div>
                          <div className='dashboardPageItem'>
-                              <div className='dashboardPageText'>Watch list</div>
+                              <NavLink
+                                   to='/dashboard/watch-list'
+                                   className='dashboardPageText'
+                                   activeClassName='activeTop'
+                              >
+                                   Watch list
+                              </NavLink>
                          </div>
                          <div className='dashboardPageItem'>
-                              <div className='dashboardPageText'>Favorite</div>
+                              <NavLink
+                                   to='/dashboard/favorite'
+                                   className='dashboardPageText'
+                                   activeClassName='activeTop'
+                              >
+                                   Favorite
+                              </NavLink>
                          </div>
                     </div>
                </div>

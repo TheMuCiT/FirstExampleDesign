@@ -11,20 +11,20 @@ import SettingsIcon from '../../icons/SettingsIcon'
 
 import './sidebar.css'
 
-const Sidebar = () => {
+export const Sidebar = () => {
      return (
           <div className='SideBar'>
                <div className='sideBarLogo'>
                     <LogoIcon size={48} />
                </div>
-               <NavLink exact activeClassName='active' to='/notification'>
+               <NavLink to='/notification' activeClassName='active'>
                     <div className='sidebarLinks'>
                          <div className='sidebarLinkIcon'>
                               <NotificationIcon size={24} />
                          </div>
                     </div>
                </NavLink>
-               <NavLink exact activeClassName='active' to='/'>
+               <NavLink activeClassName='active' to='/dashboard'>
                     <div className='sidebarLinks'>
                          <div className='sidebarLinkText'>
                               <DashboardIcon size={24} />
@@ -38,21 +38,21 @@ const Sidebar = () => {
                          </div>
                     </div>
                </NavLink>
-               <NavLink exact activeClassName='active' to='/people'>
+               <NavLink to='/people' activeClassName='active'>
                     <div className='sidebarLinks'>
                          <div className='sidebarLinkText'>
                               <PeopleIcon size={24} />
                          </div>
                     </div>
                </NavLink>
-               <NavLink exact activeClassName='active' to='/stats'>
+               <NavLink to='/stats' activeClassName='active'>
                     <div className='sidebarLinks'>
                          <div className='sidebarLinkText'>
                               <StatusIcon size={24} />
                          </div>
                     </div>
                </NavLink>
-               <NavLink exact activeClassName='active' to='/settings'>
+               <NavLink to='/settings' activeClassName='active'>
                     <div className='sidebarLinks'>
                          <div className='sidebarLinkText'>
                               <SettingsIcon size={24} />
@@ -62,5 +62,3 @@ const Sidebar = () => {
           </div>
      )
 }
-
-export default Sidebar

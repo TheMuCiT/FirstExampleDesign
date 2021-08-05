@@ -23,11 +23,12 @@
 
 .dashboardPageItem {
      margin-right: 53px;
-     border-bottom: 3px solid black;
 }
 
 .dashboardPageText {
      margin: 0px 10px;
+     text-decoration: none;
+     color: black;
      font-weight: 400;
      font-size: 17px;
 }
@@ -36,4 +37,8 @@
 
 .dashboardMainRow {
      margin-top: 79px;
+}
+
+.activeTop {
+     border-bottom: 3px solid black;
 }
