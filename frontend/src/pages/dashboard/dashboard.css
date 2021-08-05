@@ -1,10 +1,8 @@
 .dashboard {
-     background-color: green;
      margin: 68px 70px 20px 75px;
 }
 
 .dashboardTitleRow {
-     background-color: yellow;
      display: flex;
      margin-bottom: 33px;
 }
@@ -13,14 +11,17 @@
 
 .dashboardPageRow {
      display: flex;
+     border-bottom: 1px solid #e7e7e7;
+     width: 120%;
+     margin-left: -100px;
 }
 
 .dashboardPageLinks {
      display: flex;
+     margin-left: 100px;
 }
 
 .dashboardPageItem {
-     background-color: red;
      margin-right: 53px;
      border-bottom: 3px solid black;
 }
@@ -34,6 +35,5 @@
 /* Dashboard Main */
 
 .dashboardMainRow {
-     background-color: coral;
      margin-top: 79px;
 }

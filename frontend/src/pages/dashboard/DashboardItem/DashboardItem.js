@@ -11,13 +11,18 @@ import image4 from '../../../images/image4.png'
 
 import './dashboardItem.css'
 
-const DashboardItem = ({ info, section }) => {
+const DashboardItem = ({ info, section, color, colortext }) => {
      return (
           <div>
                {info.status === section ? (
                     <div className='dashboardItemBox'>
                          <div className='dashboardItemBoxHeader'>
-                              <div className='dashboardItemHeaderStatusBox'>{info.status}</div>
+                              <div
+                                   className='dashboardItemHeaderStatusBox'
+                                   style={{ backgroundColor: `${color}`, color: `${colortext}` }}
+                              >
+                                   {info.status}
+                              </div>
                               <div className='dashboardItemHeaderData'>{info.data}</div>
                          </div>
                          <div className='dashboardItemBoxMain'>{info.text}</div>

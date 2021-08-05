@@ -8,17 +8,14 @@
 }
 
 .dashboardMainInProgress {
-     background-color: darkgreen;
      flex: 25%;
 }
 
 .dashboardMainReview {
-     background-color: darkturquoise;
      flex: 25%;
 }
 
 .dashboardMainComplete {
-     background-color: gold;
      flex: 25%;
 }
 
@@ -44,7 +41,7 @@
 .dashboardMainProposedHeaderSelect {
      font-size: 19px;
      font-weight: 500;
-     color: rgba(0, 0, 0, 0.5);
+     color: #e7e7e7;
      display: flex;
      align-items: center;
 }

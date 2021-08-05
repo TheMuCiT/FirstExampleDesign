@@ -27,7 +27,7 @@ const DashboardMain = () => {
                     </div>
                     <div className='dashboardMainProposedList'>
                          {DashboardInfo.map((info) => (
-                              <DashboardItem info={info} section='Proposed' />
+                              <DashboardItem info={info} section='Proposed' color='#edf9ff' colortext='#4ecaff' />
                          ))}
                     </div>
                </div>
@@ -35,7 +35,7 @@ const DashboardMain = () => {
                     <div className='dashboardMainProposedHeader'>
                          <div className='dashboardMainProposedHeaderLeft'>
                               <div className='dashboardMainProposedHeaderLeftIcon'>
-                                   <DotIcon size={7} color='#4ECAFF' />
+                                   <DotIcon size={7} color='#FF8B6A' />
                               </div>
                               IN PROGRESS
                          </div>
@@ -48,7 +48,12 @@ const DashboardMain = () => {
                     </div>
                     <div className='dashboardMainProposedList'>
                          {DashboardInfo.map((info) => (
-                              <DashboardItem info={info} section='In Progress' />
+                              <DashboardItem
+                                   info={info}
+                                   section='In Progress'
+                                   color='#FFEFEA'
+                                   colortext='#FF8B6A'
+                              />
                          ))}
                     </div>
                </div>
@@ -56,7 +61,7 @@ const DashboardMain = () => {
                     <div className='dashboardMainProposedHeader'>
                          <div className='dashboardMainProposedHeaderLeft'>
                               <div className='dashboardMainProposedHeaderLeftIcon'>
-                                   <DotIcon size={7} color='#4ECAFF' />
+                                   <DotIcon size={7} color='#341EFF' />
                               </div>
                               REVIEW
                          </div>
@@ -69,7 +74,7 @@ const DashboardMain = () => {
                     </div>
                     <div className='dashboardMainProposedList'>
                          {DashboardInfo.map((info) => (
-                              <DashboardItem info={info} section='Review' />
+                              <DashboardItem info={info} section='Review' color='#EAE8FF' colortext='#341EFF' />
                          ))}
                     </div>
                </div>
@@ -77,7 +82,7 @@ const DashboardMain = () => {
                     <div className='dashboardMainProposedHeader'>
                          <div className='dashboardMainProposedHeaderLeft'>
                               <div className='dashboardMainProposedHeaderLeftIcon'>
-                                   <DotIcon size={7} color='#4ECAFF' />
+                                   <DotIcon size={7} color='#4CE676' />
                               </div>
                               COMPLETE
                          </div>
@@ -90,7 +95,7 @@ const DashboardMain = () => {
                     </div>
                     <div className='dashboardMainProposedList'>
                          {DashboardInfo.map((info) => (
-                              <DashboardItem info={info} section='Complete' />
+                              <DashboardItem info={info} section='Complete' color='#E8FFED' colortext='#4CE676' />
                          ))}
                     </div>
                </div>
