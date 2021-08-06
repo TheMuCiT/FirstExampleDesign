@@ -33,7 +33,7 @@
 
 .TESTLINE {
      border-top: 1px solid #e7e7e7;
-     width: 200%;
+     width: 100vh;
      margin-left: -100px;
 }
 

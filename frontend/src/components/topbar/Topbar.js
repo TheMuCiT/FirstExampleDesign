@@ -30,11 +30,11 @@ const Topbar = () => {
                               <CloseIcon size={30} />
                          </div>
                          <div className='mobileMenuIcon'>
-                              <LogoIcon size={30} />
+                              <LogoIcon size={40} />
                          </div>
                     </div>
                     <div className='mobileMenuContent'>
-                         <NavLink to='/notification' activeClassName='active'>
+                         <NavLink to='/notification' activeClassName='active' className='notActive'>
                               <div className='sidebarLinks'>
                                    <div className='sidebarLinkIcon'>
                                         <NotificationIcon size={24} />
@@ -42,7 +42,7 @@ const Topbar = () => {
                                    </div>
                               </div>
                          </NavLink>
-                         <NavLink activeClassName='active' to='/dashboard'>
+                         <NavLink activeClassName='active' to='/dashboard' className='notActive'>
                               <div className='sidebarLinks'>
                                    <div className='sidebarLinkIcon'>
                                         <DashboardIcon size={24} />
@@ -50,7 +50,7 @@ const Topbar = () => {
                                    </div>
                               </div>
                          </NavLink>
-                         <NavLink exact activeClassName='active' to='/percent'>
+                         <NavLink exact activeClassName='active' to='/percent' className='notActive'>
                               <div className='sidebarLinks'>
                                    <div className='sidebarLinkIcon'>
                                         <PercentIcon size={24} />
@@ -58,7 +58,7 @@ const Topbar = () => {
                                    </div>
                               </div>
                          </NavLink>
-                         <NavLink to='/people' activeClassName='active'>
+                         <NavLink to='/people' activeClassName='active' className='notActive'>
                               <div className='sidebarLinks'>
                                    <div className='sidebarLinkIcon'>
                                         <PeopleIcon size={24} />
@@ -66,7 +66,7 @@ const Topbar = () => {
                                    </div>
                               </div>
                          </NavLink>
-                         <NavLink to='/stats' activeClassName='active'>
+                         <NavLink to='/stats' activeClassName='active' className='notActive'>
                               <div className='sidebarLinks'>
                                    <div className='sidebarLinkIcon'>
                                         <StatusIcon size={24} />
@@ -74,7 +74,7 @@ const Topbar = () => {
                                    </div>
                               </div>
                          </NavLink>
-                         <NavLink to='/settings' activeClassName='active'>
+                         <NavLink to='/settings' activeClassName='active' className='notActive'>
                               <div className='sidebarLinks'>
                                    <div className='sidebarLinkIcon'>
                                         <SettingsIcon size={24} />

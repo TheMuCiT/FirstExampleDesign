@@ -81,7 +81,6 @@
 .mobileMenuTop {
      width: 90%;
      margin: 0px 20px;
-     background-color: rgb(0, 255, 0);
      display: flex;
      justify-content: space-between;
 }
@@ -101,7 +100,8 @@
 
 .mobileMenuText {
      margin-left: 30px;
-     text-decoration: none;
+     font-weight: 600;
+     color: black;
 }
 
 @media only screen and (max-width: 950px) {

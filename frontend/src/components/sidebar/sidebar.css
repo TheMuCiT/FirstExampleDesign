@@ -33,6 +33,11 @@
 
 .active {
      border-left: 3px solid black;
+     text-decoration: none;
+}
+
+.notActive {
+     text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
