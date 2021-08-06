@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 
 import LogoIcon from '../../icons/LogoIcon'
@@ -22,6 +22,18 @@ const Topbar = () => {
           setMobile(!Mobile)
      }
 
+     const WindowChange = () => {
+          if (window.innerWidth > 600) {
+               setMobile(false)
+          }
+     }
+
+     useEffect(() => {
+          WindowChange()
+     }, [])
+
+     window.addEventListener('resize', WindowChange)
+
      return (
           <div className='topbar'>
                <div className={Mobile ? 'mobileMenu active' : 'mobileMenu'}>
@@ -36,7 +48,7 @@ const Topbar = () => {
                     <div className='mobileMenuContent'>
                          <NavLink to='/notification' activeClassName='active' className='notActive'>
                               <div className='sidebarLinks'>
-                                   <div className='sidebarLinkIcon'>
+                                   <div className='sidebarLinkIcon' onClick={HandleMobileMenu}>
                                         <NotificationIcon size={24} />
                                         <div className='mobileMenuText'>Notification</div>
                                    </div>
@@ -44,7 +56,7 @@ const Topbar = () => {
                          </NavLink>
                          <NavLink activeClassName='active' to='/dashboard' className='notActive'>
                               <div className='sidebarLinks'>
-                                   <div className='sidebarLinkIcon'>
+                                   <div className='sidebarLinkIcon' onClick={HandleMobileMenu}>
                                         <DashboardIcon size={24} />
                                         <div className='mobileMenuText'>Dashboard</div>
                                    </div>
@@ -52,7 +64,7 @@ const Topbar = () => {
                          </NavLink>
                          <NavLink exact activeClassName='active' to='/percent' className='notActive'>
                               <div className='sidebarLinks'>
-                                   <div className='sidebarLinkIcon'>
+                                   <div className='sidebarLinkIcon' onClick={HandleMobileMenu}>
                                         <PercentIcon size={24} />
                                         <div className='mobileMenuText'>Discounts</div>
                                    </div>
@@ -60,7 +72,7 @@ const Topbar = () => {
                          </NavLink>
                          <NavLink to='/people' activeClassName='active' className='notActive'>
                               <div className='sidebarLinks'>
-                                   <div className='sidebarLinkIcon'>
+                                   <div className='sidebarLinkIcon' onClick={HandleMobileMenu}>
                                         <PeopleIcon size={24} />
                                         <div className='mobileMenuText'>Users</div>
                                    </div>
@@ -68,7 +80,7 @@ const Topbar = () => {
                          </NavLink>
                          <NavLink to='/stats' activeClassName='active' className='notActive'>
                               <div className='sidebarLinks'>
-                                   <div className='sidebarLinkIcon'>
+                                   <div className='sidebarLinkIcon' onClick={HandleMobileMenu}>
                                         <StatusIcon size={24} />
                                         <div className='mobileMenuText'>Statistics</div>
                                    </div>
@@ -76,7 +88,7 @@ const Topbar = () => {
                          </NavLink>
                          <NavLink to='/settings' activeClassName='active' className='notActive'>
                               <div className='sidebarLinks'>
-                                   <div className='sidebarLinkIcon'>
+                                   <div className='sidebarLinkIcon' onClick={HandleMobileMenu}>
                                         <SettingsIcon size={24} />
                                         <div className='mobileMenuText'>Settings</div>
                                    </div>
@@ -91,10 +103,10 @@ const Topbar = () => {
                </div>
                <div className='topbarRight'>
                     <div className='topbarSearch'>
-                         <div className='topbarSearchIcon'>
+                         <div className={Mobile ? 'topbarSearchIcon disable' : 'topbarSearchIcon'}>
                               <SearchIcon size={20} />
                          </div>
-                         <input type='text' className='topbarSearchInput' placeholder='Search...' />
+                         <input type='text' className='topbarSearchInput' />
                     </div>
                     <div className='topbarIcon'>
                          <SearchIcon1 size={20} />
