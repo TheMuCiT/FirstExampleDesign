@@ -19,7 +19,7 @@ export const Sidebar = () => {
                </div>
                <NavLink to='/notification' activeClassName='active'>
                     <div className='sidebarLinks'>
-                         <div className='sidebarLinkIcon'>
+                         <div className='sidebarLinkText'>
                               <NotificationIcon size={24} />
                          </div>
                     </div>

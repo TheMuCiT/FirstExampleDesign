@@ -11,14 +11,11 @@
 
 .dashboardPageRow {
      display: flex;
-     border-bottom: 1px solid #e7e7e7;
-     width: 120%;
-     margin-left: -100px;
 }
 
 .dashboardPageLinks {
      display: flex;
-     margin-left: 100px;
+     width: 100%;
 }
 
 .dashboardPageItem {
@@ -31,6 +28,13 @@
      color: black;
      font-weight: 400;
      font-size: 17px;
+     white-space: nowrap;
+}
+
+.TESTLINE {
+     border-top: 1px solid #e7e7e7;
+     width: 200%;
+     margin-left: -100px;
 }
 
 /* Dashboard Main */
@@ -41,4 +45,38 @@
 
 .activeTop {
      border-bottom: 3px solid black;
+}
+
+@media only screen and (max-width: 1110px) {
+     .dashboard {
+          margin: 68px 55px 20px 25px;
+     }
+
+     @media only screen and (max-width: 950px) {
+          .dashboard {
+               margin: 20px 55px 20px 25px;
+          }
+
+          @media only screen and (max-width: 800px) {
+               .dashboard {
+                    margin: 20px 25px 20px 25px;
+               }
+               .dashboardPageItem {
+                    margin-right: 30px;
+               }
+
+               .dashboardPageText {
+                    font-size: 15px;
+               }
+
+               @media only screen and (max-width: 600px) {
+                    .dashboard {
+                         margin: 10px;
+                    }
+                    .dashboardPageItem {
+                         margin-right: auto;
+                    }
+               }
+          }
+     }
 }

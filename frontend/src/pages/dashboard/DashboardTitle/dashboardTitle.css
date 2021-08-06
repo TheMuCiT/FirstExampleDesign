@@ -45,6 +45,11 @@
      color: rgba(0, 0, 0, 0.5);
 }
 
+.dashboardTitleRightSearchIcon {
+     display: flex;
+     margin-left: 15px;
+}
+
 .dashboardTitleRightIcon {
      display: flex;
      margin-left: 30px;
@@ -53,11 +58,40 @@
 /* TEXT */
 
 .dashboardTitleLeftText {
-     font-size: 48px;
+     font-size: 3rem;
      font-weight: 600;
 }
 
 .dashboardTitleRightButtonText {
      font-size: 13px;
      font-weight: 500;
+}
+
+@media only screen and (max-width: 1389px) {
+     .dashboardTitleLeftText {
+          font-size: 43px;
+     }
+
+     .dashboardTitleRightSearch {
+          width: 200px;
+     }
+
+     @media only screen and (max-width: 1110px) {
+          .dashboardTitleLeftText {
+               font-size: 35px;
+          }
+          .dashboardTitleRightSearch {
+               width: 150px;
+          }
+
+          @media only screen and (max-width: 950px) {
+               .dashboardTitleLeftText {
+                    font-size: 25px;
+               }
+
+               .mobileDisable {
+                    display: none;
+               }
+          }
+     }
 }

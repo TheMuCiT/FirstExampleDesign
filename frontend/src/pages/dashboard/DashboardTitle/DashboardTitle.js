@@ -13,14 +13,16 @@ const DashboardTitle = () => {
                     <div className='dashboardTitleLeftText'>Dashboard</div>
                </div>
                <div className='dashboardTitleRight'>
-                    <div className='dashboardTitleRightIcon'>
+                    <div className='dashboardTitleRightIcon mobileDisable'>
                          <SearchIcon1 />
                     </div>
-                    <div className='dashboardTitleRightIcon'>
+                    <div className='dashboardTitleRightIcon mobileDisable'>
                          <SearchIcon2 />
                     </div>
-                    <div className='dashboardTitleRightSearch'>
-                         <SearchIcon size={20} />
+                    <div className='dashboardTitleRightSearch mobileDisable'>
+                         <div className='dashboardTitleRightSearchIcon'>
+                              <SearchIcon size={20} />
+                         </div>
                          <input type='text' className='dashboardTitleRightSearchInput' placeholder='Search...' />
                     </div>
                     <div className='dashboardTitleRightButton'>

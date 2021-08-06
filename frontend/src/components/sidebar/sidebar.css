@@ -34,3 +34,9 @@
 .active {
      border-left: 3px solid black;
 }
+
+@media only screen and (max-width: 600px) {
+     .SideBar {
+          display: none;
+     }
+}

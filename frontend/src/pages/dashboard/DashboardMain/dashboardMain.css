@@ -53,3 +53,36 @@
 .dashboardMainProposedList {
      margin-top: 47px;
 }
+
+@media only screen and (max-width: 1389px) {
+     .dashboardMain {
+          display: grid;
+          margin-right: 35px;
+          grid-template-columns: 50% 50%;
+     }
+
+     .dashboardMainProposed {
+          margin-bottom: 50px;
+     }
+
+     .dashboardMainInProgress {
+          margin-bottom: 50px;
+     }
+
+     .dashboardMainReview {
+          flex-basis: calc(50% - 100px);
+          margin-bottom: 50px;
+     }
+
+     .dashboardMainComplete {
+          flex-basis: calc(50% - 100px);
+     }
+
+     @media only screen and (max-width: 800px) {
+          .dashboardMain {
+               margin-right: 0px;
+               display: flex;
+               flex-direction: column;
+          }
+     }
+}

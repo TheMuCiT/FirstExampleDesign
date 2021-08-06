@@ -2,11 +2,13 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 
 import { Sidebar } from './components/sidebar/Sidebar'
+import Topbar from './components/topbar/Topbar'
 import Dashboard from './pages/dashboard/Dashboard'
 
 const App = () => {
      return (
           <Router>
+               <Topbar />
                <Sidebar />
                <div className='main'>
                     <Switch>
