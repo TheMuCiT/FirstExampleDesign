@@ -4,6 +4,10 @@
      border: 1px solid #e7e7e7;
 }
 
+.dashboardItemBox:hover {
+     box-shadow: 5px 5px 15px rgb(163, 163, 163);
+}
+
 .dashboardItemBoxHeader {
      display: flex;
      justify-content: space-between;

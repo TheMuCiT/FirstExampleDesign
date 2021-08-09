@@ -8,7 +8,7 @@
      position: fixed;
      overflow-x: hidden;
      padding-top: 47px;
-     border-right: 1px solid #e7e7e7;
+     border-right: 1px solid #c7c7c7;
 }
 
 .sideBarLogo {
@@ -16,6 +16,7 @@
      justify-content: center;
      align-items: center;
      margin-bottom: 69px;
+     animation: rotation 1s ease-in-out;
 }
 
 .SideBar a {
@@ -31,13 +32,37 @@
      text-align: center;
 }
 
+.sidebarLinks:hover .sidebarSVG .SVGMAIN {
+     fill: #696969;
+}
+
+.sidebarSVG {
+     width: 24px;
+     height: auto;
+}
+
 .active {
      border-left: 3px solid black;
      text-decoration: none;
 }
 
-.notActive {
-     text-decoration: none;
+.active .sidebarSVG {
+     width: 30px;
+}
+
+.active .sidebarSVG .SVGMAIN {
+     fill: black !important;
+}
+
+/* ANIMATION */
+
+@keyframes rotation {
+     0% {
+          transform: rotate(180deg);
+     }
+     100% {
+          transform: rotate(0deg);
+     }
 }
 
 @media only screen and (max-width: 600px) {

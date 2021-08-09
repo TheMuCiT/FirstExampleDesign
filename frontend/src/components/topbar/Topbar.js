@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import LogoIcon from '../../icons/LogoIcon'
 import SearchIcon1 from '../../icons/SearchIcon1'
 import SearchIcon2 from '../../icons/SearchIcon2'
-import SearchIcon from '../../icons/SearchIcon'
+import { ReactComponent as SearchIconSVG } from '../../icons/SearchIcon.svg'
 import NotificationIcon from '../../icons/NotificationIcon'
 import SettingsIcon from '../../icons/SettingsIcon'
 import StatusIcon from '../../icons/StatusIcon'
@@ -104,7 +104,7 @@ const Topbar = () => {
                <div className='topbarRight'>
                     <div className='topbarSearch'>
                          <div className={Mobile ? 'topbarSearchIcon disable' : 'topbarSearchIcon'}>
-                              <SearchIcon size={20} />
+                              <SearchIconSVG className='topbarSearchIconSVG' />
                          </div>
                          <input type='text' className='topbarSearchInput' />
                     </div>

@@ -5,18 +5,26 @@
 
 .dashboardMainProposed {
      flex: 25%;
+     animation: slideUp 1s ease-in-out;
 }
 
 .dashboardMainInProgress {
      flex: 25%;
+     opacity: 0;
+     animation: slideUp 1s ease-in-out forwards 0.5s;
+     animation-delay: 0.5s;
 }
 
 .dashboardMainReview {
      flex: 25%;
+     opacity: 0;
+     animation: slideUp 1s ease-in-out forwards 1s;
 }
 
 .dashboardMainComplete {
      flex: 25%;
+     opacity: 0;
+     animation: slideUp 1s ease-in-out forwards 1.5s;
 }
 
 .dashboardMainProposedHeader {
@@ -52,6 +60,19 @@
 
 .dashboardMainProposedList {
      margin-top: 47px;
+}
+
+/* ANIMATION */
+
+@keyframes slideUp {
+     0% {
+          transform: translateY(300px);
+          opacity: 0;
+     }
+     100% {
+          transform: translateY(0px);
+          opacity: 1;
+     }
 }
 
 @media only screen and (max-width: 1389px) {

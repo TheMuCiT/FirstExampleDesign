@@ -32,11 +32,16 @@
      pointer-events: none;
 }
 
+.topbarSearchIconSVG {
+     width: 20px;
+     height: auto;
+}
+
 .topbarSearch {
      display: flex;
      align-items: center;
      justify-content: flex-end;
-     border-radius: 10px;
+     border-radius: 6px;
      margin-right: 0px;
      width: 50px;
      height: 30px;
@@ -66,6 +71,10 @@
 .topbarSearch:focus-within .topbarSearchIcon {
      margin-right: 0px;
      margin-left: 5px;
+}
+
+.topbarSearch:focus-within .topbarSearchIconSVG {
+     width: 15px;
 }
 
 .topbarSearchClickIcon.disable {
@@ -137,8 +146,8 @@
      cursor: pointer;
 }
 
-.topbarSearchIcon.disable{
-  display: none;
+.topbarSearchIcon.disable {
+     display: none;
 }
 
 @media only screen and (max-width: 950px) {

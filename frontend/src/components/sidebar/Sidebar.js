@@ -2,12 +2,12 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 import LogoIcon from '../../icons/LogoIcon'
-import NotificationIcon from '../../icons/NotificationIcon'
-import DashboardIcon from '../../icons/DashboardIcon'
-import PercentIcon from '../../icons/PercentIcon'
-import PeopleIcon from '../../icons/PeopleIcon'
-import StatusIcon from '../../icons/StatusIcon'
-import SettingsIcon from '../../icons/SettingsIcon'
+import { ReactComponent as NotificationIconSVG } from '../../icons/NotificationIconSVG.svg'
+import { ReactComponent as DashboardIconSVG } from '../../icons/DashboardIconSVG.svg'
+import { ReactComponent as DiscountsIconSVG } from '../../icons/DiscountsIconSVG.svg'
+import { ReactComponent as UserIconSVG } from '../../icons/UserIconSVG.svg'
+import { ReactComponent as StatisticsIconSVG } from '../../icons/StatisticsIconSVG.svg'
+import { ReactComponent as SettingsIconSVG } from '../../icons/SettingsIconSVG.svg'
 
 import './sidebar.css'
 
@@ -20,42 +20,42 @@ export const Sidebar = () => {
                <NavLink to='/notification' activeClassName='active'>
                     <div className='sidebarLinks'>
                          <div className='sidebarLinkText'>
-                              <NotificationIcon size={24} />
+                              <NotificationIconSVG className='sidebarSVG' />
                          </div>
                     </div>
                </NavLink>
                <NavLink activeClassName='active' to='/dashboard'>
                     <div className='sidebarLinks'>
                          <div className='sidebarLinkText'>
-                              <DashboardIcon size={24} />
+                              <DashboardIconSVG className='sidebarSVG' />
                          </div>
                     </div>
                </NavLink>
                <NavLink exact activeClassName='active' to='/percent'>
                     <div className='sidebarLinks'>
                          <div className='sidebarLinkText'>
-                              <PercentIcon size={24} />
+                              <DiscountsIconSVG className='sidebarSVG' />
                          </div>
                     </div>
                </NavLink>
                <NavLink to='/people' activeClassName='active'>
                     <div className='sidebarLinks'>
                          <div className='sidebarLinkText'>
-                              <PeopleIcon size={24} />
+                              <UserIconSVG className='sidebarSVG' />
                          </div>
                     </div>
                </NavLink>
                <NavLink to='/stats' activeClassName='active'>
                     <div className='sidebarLinks'>
                          <div className='sidebarLinkText'>
-                              <StatusIcon size={24} />
+                              <StatisticsIconSVG className='sidebarSVG' />
                          </div>
                     </div>
                </NavLink>
                <NavLink to='/settings' activeClassName='active'>
                     <div className='sidebarLinks'>
                          <div className='sidebarLinkText'>
-                              <SettingsIcon size={24} />
+                              <SettingsIconSVG className='sidebarSVG' />
                          </div>
                     </div>
                </NavLink>

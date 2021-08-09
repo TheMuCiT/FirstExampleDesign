@@ -16,6 +16,7 @@
 .dashboardPageLinks {
      display: flex;
      width: 100%;
+     animation: slideIn 0.8s ease-in-out;
 }
 
 .dashboardPageItem {
