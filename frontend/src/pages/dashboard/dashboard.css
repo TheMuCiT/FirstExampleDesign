@@ -23,13 +23,23 @@
      margin-right: 53px;
 }
 
+.dashboardPageItem:hover {
+     transform: scale(1.05);
+}
+
 .dashboardPageText {
      margin: 0px 10px;
      text-decoration: none;
      color: black;
      font-weight: 400;
      font-size: 17px;
+     opacity: 0.3;
      white-space: nowrap;
+}
+
+.dashboardPageText:hover {
+     opacity: 0.5;
+     transform: scale(0.8);
 }
 
 .TESTLINE {
@@ -46,6 +56,8 @@
 
 .activeTop {
      border-bottom: 3px solid black;
+     opacity: 1 !important;
+     transform: scale(1) !important;
 }
 
 @media only screen and (max-width: 1110px) {

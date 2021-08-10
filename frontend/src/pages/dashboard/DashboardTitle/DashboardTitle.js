@@ -1,8 +1,8 @@
 import React from 'react'
 
 import SearchIcon from '../../../icons/SearchIcon'
-import SearchIcon1 from '../../../icons/SearchIcon1'
-import SearchIcon2 from '../../../icons/SearchIcon2'
+import { ReactComponent as SearchIcon1SVG } from '../../../icons/SearchIcon1SVG.svg'
+import { ReactComponent as SearchIcon2SVG } from '../../../icons/SearchIcon2SVG.svg'
 
 import './dashboardTitle.css'
 
@@ -14,10 +14,10 @@ const DashboardTitle = () => {
                </div>
                <div className='dashboardTitleRight'>
                     <div className='dashboardTitleRightIcon mobileDisable'>
-                         <SearchIcon1 />
+                         <SearchIcon1SVG className='SearchIcon1SVG' />
                     </div>
                     <div className='dashboardTitleRightIcon mobileDisable'>
-                         <SearchIcon2 />
+                         <SearchIcon2SVG className='SearchIcon1SVG' />
                     </div>
                     <div className='dashboardTitleRightSearch mobileDisable'>
                          <div className='dashboardTitleRightSearchIcon'>
