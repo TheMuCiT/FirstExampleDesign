@@ -5,7 +5,7 @@
 }
 
 .dashboardItemBox:hover {
-     box-shadow: 10px 10px 25px 10px rgba(163, 163, 163, 0.5);
+     box-shadow: 10px 10px 25px 10px rgba(163, 163, 163, 0.3);
      transform: scale(1.01, 1.01);
 }
 
